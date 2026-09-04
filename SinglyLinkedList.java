@@ -68,15 +68,11 @@ public class SinglyLinkedList<E> {
     // Write your codes below
     public String toString(){
         Node<E> curr = head;
-        String res = "[";
+        String res = "";
         while(curr != null) {
             res += curr.getElement();
-            if(curr.getNext() != null) {
-                res += ", ";
-            }
             curr = curr.getNext();
         }
-        res += "]";
         return res;
     }
 
